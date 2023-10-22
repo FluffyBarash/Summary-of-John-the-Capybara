@@ -7,6 +7,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  font-family: "Heebo", sans-serif;
 }
 
 body,
@@ -46,4 +47,44 @@ page {
 
 main {
   flex: 1 1 auto;
+}
+
+.nav {
+  background-color: beige;
+  text-decoration: none;
+  display: flex;
+  &__menu {
+    background-color: aqua;
+    margin-left: auto;
+    display: flex;
+    margin-right: 4%;
+    & a {
+      text-decoration: none;
+      padding: 25px 25px 25px 25px;
+      font-size: 20px;
+      font-weight: 500;
+      color: black;
+      &:hover {
+        color: rgba(255, 100, 100, 1);
+        text-shadow: 0px 0px 100px black;
+      }
+    }
+  }
+}
+
+.header__title-box {
+  background-color: bisque;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  .header__title {
+    width: 60%;
+    background-color: aqua;
+    & h1 {
+      color: #21243d;
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 60px;
+    }
+  }
 }

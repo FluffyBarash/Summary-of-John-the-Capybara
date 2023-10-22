@@ -9,6 +9,7 @@ html {
 *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  font-family: "Heebo", sans-serif;
 }
 
 body,
@@ -55,4 +56,48 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.nav {
+  background-color: beige;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav__menu {
+  background-color: aqua;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 4%;
+}
+.nav__menu a {
+  text-decoration: none;
+  padding: 25px 25px 25px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+.nav__menu a:hover {
+  color: rgb(255, 100, 100);
+  text-shadow: 0px 0px 100px black;
+}
+
+.header__title-box {
+  background-color: bisque;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.header__title-box .header__title {
+  width: 60%;
+  background-color: aqua;
+}
+.header__title-box .header__title h1 {
+  color: #21243d;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
 }
