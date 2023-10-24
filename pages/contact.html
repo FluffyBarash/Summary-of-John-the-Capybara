@@ -5,18 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <meta <link rel="stylesheet" href="css/style.css" />
-    <title>John the capybara's contacts</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>John the capybara's blog</title>
   </head>
   <body>
-    <page>
-      <header></header>
-      <main></main>
-      <footer></footer>
-    </page>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <div class="nav__body">
+            <div class="logo">
+              <a href="../index.html" class="logo__capybara"></a>
+            </div>
+            <div class="nav__nav">
+              <a href="../pages/work.html" class="link">Works</a>
+              <a href="../pages/blog.html" class="link">Blog</a>
+              <a href="../pages/contact.html" class="link_red">Contact</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="contact">
+          <div class="contact__body">
+            <div class="contact__title">
+              <h1>Contact Us</h1>
+              <p>
+                Feel free to contact me with questions, potential partnerships
+                or media inquiries.
+              </p>
+            </div>
+            <div class="windows">
+              <div class="windows__input">
+                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="E-mali" />
+              </div>
+              <textarea placeholder="Your text"></textarea>
+            </div>
+            <div class="contact__submit">
+              <a href="#">SUBMIT</a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__body">
+          <div class="footer__link">
+            <a
+              href="https://uk-ua.facebook.com/"
+              target="_blank"
+              class="facebook"
+            ></a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="instagram"
+            ></a>
+            <a
+              href="https://twitter.com/?lang=ru"
+              target="_blank"
+              class="twitter"
+            ></a>
+            <a
+              href="https://ua.linkedin.com/"
+              target="_blank"
+              class="linkedin"
+            ></a>
+          </div>
+          <div class="helpful_information">
+            E-mail:
+            <a href="https://mail.google.com/" target="_blank"
+              >capybara.john@gmail.com</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

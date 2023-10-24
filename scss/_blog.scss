@@ -1,0 +1,56 @@
+// Variables ⬇️
+@import "_vars";
+// -------------------------------------------
+
+.blog {
+  &__body {
+    width: 70%;
+    // background-color: beige;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  &__title {
+    color: $top_color;
+    margin-bottom: 5%;
+    & h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+  &__list {
+    .piece {
+      border-bottom: 1px solid rgba(224, 224, 224, 1);
+      & h2 {
+        color: $top_color;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 1%;
+        margin-top: 3%;
+      }
+    }
+    & p {
+      color: $top_color;
+      font-size: 18.6px;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 3%;
+    }
+    & table {
+      margin-bottom: 1%;
+      font-size: 20px;
+      .one {
+        color: $top_color;
+        font-weight: 400;
+        padding-right: 20px;
+      }
+      .two {
+        color: #8695a4;
+        font-weight: 400;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+    }
+  }
+}

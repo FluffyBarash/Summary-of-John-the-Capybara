@@ -1,7 +1,182 @@
-html {
+.blog__body {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.blog__title {
+  color: #21243d;
+  margin-bottom: 5%;
+}
+.blog__title h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.blog__list .piece {
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+.blog__list .piece h2 {
+  color: #21243d;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 1%;
+  margin-top: 3%;
+}
+.blog__list p {
+  color: #21243d;
+  font-size: 18.6px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 3%;
+}
+.blog__list table {
+  margin-bottom: 1%;
+  font-size: 20px;
+}
+.blog__list table .one {
+  color: #21243d;
+  font-weight: 400;
+  padding-right: 20px;
+}
+.blog__list table .two {
+  color: #8695a4;
+  font-weight: 400;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.work__body {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.work__title {
+  color: #21243d;
+  margin-bottom: 5%;
+}
+.work__title h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+.work .works__img {
+  width: 70%;
+  margin-bottom: 1%;
+}
+.work .works__img img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.contact__body {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8vw;
+  margin-bottom: 3vw;
+}
+.contact__title {
+  text-align: center;
+}
+.contact__title h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #21243d;
+}
+.contact__title p {
+  color: #21243d;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5%;
+}
+.contact .windows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .windows__input {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3%;
+}
+.contact .windows__input input {
+  width: 45%;
+  height: 3.5vw;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 18px 20px;
+  outline: none;
+  border: none;
+}
+.contact .windows textarea {
+  width: 50%;
+  height: 15vw;
+  border: none;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  padding: 18px 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  padding-top: 20px;
+  resize: none;
+  outline: none;
+  margin-bottom: 5%;
+}
+.contact__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact__submit a {
+  padding: 10px 60px;
+  background-color: rgb(255, 100, 100);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.contact__submit a:hover {
+  background-color: rgb(23, 174, 23);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.332);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.332);
+}
+
+html,
+body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
+  height: 100%;
 }
 
 *,
@@ -39,7 +214,7 @@ img {
 
 .page {
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,16 +227,22 @@ img {
   margin-right: auto;
 }
 
-main {
+.main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
+.nav {
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
 .nav__body {
-  width: 55%;
+  width: 53%;
   margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,6 +266,8 @@ main {
   background-image: url(../images/header/menu/capybara.svg);
 }
 .nav__body .logo__capybara:hover {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
   background-image: url(../images/header/menu/capybara_green.svg);
   -webkit-filter: drop-shadow(1px 1px 150px black);
           filter: drop-shadow(1px 1px 150px black);
@@ -94,16 +277,31 @@ main {
   margin-bottom: auto;
   margin-right: 5%;
 }
-.nav__nav a {
+.nav__nav .link {
+  color: black;
   padding: 20px 20px 20px 20px;
   text-decoration: none;
-  color: #000;
   font-size: 20px;
   font-weight: 500;
 }
-.nav__nav a:hover {
+.nav__nav .link:hover {
   color: rgb(23, 174, 23);
   text-shadow: 1px 1px 100px black;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.nav__nav .link_red {
+  color: rgb(255, 100, 100);
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.nav__nav .link_red:hover {
+  color: rgb(23, 174, 23);
+  text-shadow: 1px 1px 100px black;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .box {
@@ -152,11 +350,14 @@ main {
 }
 .title_box__title a:hover {
   background-color: rgb(23, 174, 23);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.332);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.332);
 }
 .title_box__images {
-  width: 23%;
+  width: 250px;
+  height: 250px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4%;
@@ -193,7 +394,7 @@ main {
 }
 .recent_posts__body .a_2:hover {
   text-decoration: underline;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.178);
+  text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.178);
 }
 .recent_posts__top {
   display: -webkit-box;
@@ -301,7 +502,7 @@ main {
 }
 .works p {
   color: #21243d;
-  font-size: 18.6px;
+  font-size: 17px;
   font-weight: 400;
   line-height: normal;
 }
@@ -322,9 +523,18 @@ main {
 }
 .footer .helpful_information {
   text-align: center;
-  color: #21243d;
   font-size: 14px;
   font-weight: 400;
+}
+.footer .helpful_information a {
+  color: #21243d;
+  text-decoration: none;
+}
+.footer .helpful_information a:hover {
+  color: rgb(23, 174, 23);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  text-decoration: underline;
 }
 .footer__link {
   display: -webkit-box;
@@ -343,6 +553,10 @@ main {
 .footer__link .facebook:hover {
   width: 30px;
   height: 30px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-filter: drop-shadow(1px 1px 150px black);
+          filter: drop-shadow(1px 1px 150px black);
   background-image: url(../images/footer/link/green_link/fb_green.svg);
 }
 .footer__link .instagram {
@@ -353,6 +567,10 @@ main {
 .footer__link .instagram:hover {
   width: 30px;
   height: 30px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-filter: drop-shadow(1px 1px 150px black);
+          filter: drop-shadow(1px 1px 150px black);
   background-image: url(../images/footer/link/green_link/insta_green.svg);
 }
 .footer__link .twitter {
@@ -363,6 +581,10 @@ main {
 .footer__link .twitter:hover {
   width: 37px;
   height: 30px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-filter: drop-shadow(1px 1px 150px black);
+          filter: drop-shadow(1px 1px 150px black);
   background-image: url(../images/footer/link/green_link/twitter_green.svg);
 }
 .footer__link .linkedin {
@@ -373,5 +595,9 @@ main {
 .footer__link .linkedin:hover {
   width: 30px;
   height: 30px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-filter: drop-shadow(1px 1px 150px black);
+          filter: drop-shadow(1px 1px 150px black);
   background-image: url(../images/footer/link/green_link/linkedin_green.svg);
 }

@@ -1,10 +1,18 @@
 // Variables ⬇️
-
 @import "_vars";
+// -------------------------------------------
 
-html {
+// other pages ⬇️
+@import "_blog";
+@import "_work";
+@import "_contact";
+// -------------------------------------------
+
+html,
+body {
   box-sizing: border-box;
   font-size: 16px;
+  height: 100%;
 }
 
 *,
@@ -41,7 +49,7 @@ img {
 
 .page {
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   max-width: 6000px;
@@ -49,21 +57,19 @@ img {
   margin-right: auto;
 }
 
-.header {
-  // background-color: aquamarine;
-}
-
-main {
+.main {
   flex: 1 1 auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .nav {
-  // background-color: chocolate;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
   &__body {
     // background-color: aqua;
-    width: 55%;
+    width: 53%;
     margin-left: auto;
     display: flex;
     justify-content: space-between;
@@ -78,6 +84,7 @@ main {
         margin-bottom: auto;
         background-image: url(../images/header/menu/capybara.svg);
         &:hover {
+          transition: all 0.6s ease;
           background-image: url(../images/header/menu/capybara_green.svg);
           filter: drop-shadow(1px 1px 150px black);
         }
@@ -88,15 +95,28 @@ main {
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 5%;
-    & a {
+    .link {
+      color: black;
       padding: 20px 20px 20px 20px;
       text-decoration: none;
-      color: #000;
       font-size: 20px;
       font-weight: 500;
       &:hover {
         color: rgb(23, 174, 23);
         text-shadow: 1px 1px 100px black;
+        transition: all 0.6s ease;
+      }
+    }
+    .link_red {
+      color: rgba(255, 100, 100, 1);
+      padding: 20px 20px 20px 20px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+      &:hover {
+        color: rgb(23, 174, 23);
+        text-shadow: 1px 1px 100px black;
+        transition: all 0.6s ease;
       }
     }
   }
@@ -143,16 +163,18 @@ main {
       text-decoration: none;
       &:hover {
         background-color: rgb(23, 174, 23);
+        transition: all 0.4s ease;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.332);
       }
     }
   }
   &__images {
-    width: 23%;
+    width: 250px;
+    height: 250px;
+    // width: 23%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4%;
-    // margin-bottom: auto;
     & img {
       border-radius: 50%;
       border: 1px solid #000;
@@ -184,7 +206,7 @@ main {
       text-decoration: none;
       &:hover {
         text-decoration: underline;
-        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.178);
+        text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.178);
       }
     }
   }
@@ -286,7 +308,7 @@ main {
   }
   & p {
     color: $top_color;
-    font-size: 18.6px;
+    font-size: 17px;
     font-weight: 400;
     line-height: normal;
   }
@@ -305,9 +327,17 @@ main {
   }
   .helpful_information {
     text-align: center;
-    color: $top_color;
     font-size: 14px;
     font-weight: 400;
+    & a {
+      color: $top_color;
+      text-decoration: none;
+      &:hover {
+        color: rgb(23, 174, 23);
+        transition: all 0.4s ease;
+        text-decoration: underline;
+      }
+    }
   }
   &__link {
     display: flex;
@@ -322,6 +352,8 @@ main {
       &:hover {
         width: 30px;
         height: 30px;
+        transition: all 0.6s ease;
+        filter: drop-shadow(1px 1px 150px black);
         background-image: url(../images/footer/link/green_link/fb_green.svg);
       }
     }
@@ -332,6 +364,8 @@ main {
       &:hover {
         width: 30px;
         height: 30px;
+        transition: all 0.6s ease;
+        filter: drop-shadow(1px 1px 150px black);
         background-image: url(../images/footer/link/green_link/insta_green.svg);
       }
     }
@@ -342,6 +376,8 @@ main {
       &:hover {
         width: 37px;
         height: 30px;
+        transition: all 0.6s ease;
+        filter: drop-shadow(1px 1px 150px black);
         background-image: url(../images/footer/link/green_link/twitter_green.svg);
       }
     }
@@ -352,6 +388,8 @@ main {
       &:hover {
         width: 30px;
         height: 30px;
+        transition: all 0.6s ease;
+        filter: drop-shadow(1px 1px 150px black);
         background-image: url(../images/footer/link/green_link/linkedin_green.svg);
       }
     }
