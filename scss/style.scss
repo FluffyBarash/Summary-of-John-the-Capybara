@@ -69,7 +69,7 @@ img {
   background-color: white;
   &__body {
     // background-color: aqua;
-    width: 53%;
+    width: 52vw;
     margin-left: auto;
     display: flex;
     justify-content: space-between;
@@ -170,11 +170,10 @@ img {
   }
   &__images {
     width: 250px;
-    height: 250px;
-    // width: 23%;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4%;
+    margin-top: 2%;
     & img {
       border-radius: 50%;
       border: 1px solid #000;
@@ -191,12 +190,12 @@ img {
     margin-left: auto;
     margin-right: auto;
     // background-color: aqua;
-    padding-top: 30px;
+    padding-top: 2%;
     & p {
       color: $top_color;
       font-size: 22px;
       font-weight: 400;
-      margin-bottom: 3%;
+      // margin-bottom: 0%;
     }
     .a_2 {
       color: #00a8cc;
@@ -270,11 +269,10 @@ img {
   border-bottom: 1px solid rgba(224, 224, 224, 1);
   margin-bottom: 3%;
   &__images {
-    width: 50%;
     & img {
-      width: 100%;
+      width: 500px;
       margin-bottom: 2%;
-      border-radius: 6px;
+      margin-top: -10px;
     }
   }
   &__info {
@@ -302,13 +300,13 @@ img {
   }
   & h3 {
     color: $top_color;
-    font-size: 30px;
+    font-size: clamp(1.875rem, 0.913rem + 1.28vw, 2.5rem);
     font-weight: 700;
     padding-bottom: 1%;
   }
   & p {
     color: $top_color;
-    font-size: 17px;
+    font-size: clamp(1.063rem, 0.293rem + 1.03vw, 1.563rem);
     font-weight: 400;
     line-height: normal;
   }
@@ -319,10 +317,11 @@ img {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     // background-color: crimson;
+    padding-top: 5%;
     margin-bottom: 5%;
   }
   .helpful_information {

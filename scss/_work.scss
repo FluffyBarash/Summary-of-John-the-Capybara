@@ -20,11 +20,10 @@
     }
   }
   .works__img {
-    width: 70%;
     margin-bottom: 1%;
+    // width: 450px;
     & img {
-      width: 100%;
-      border-radius: 6px;
+      width: 500px;
     }
   }
 }

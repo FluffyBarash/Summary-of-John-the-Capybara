@@ -24,7 +24,7 @@
       border-bottom: 1px solid rgba(224, 224, 224, 1);
       & h2 {
         color: $top_color;
-        font-size: 30px;
+        font-size: clamp(1.875rem, 0.913rem + 1.28vw, 2.5rem);
         font-weight: 700;
         margin-bottom: 1%;
         margin-top: 3%;
@@ -32,7 +32,7 @@
     }
     & p {
       color: $top_color;
-      font-size: 18.6px;
+      font-size: clamp(1.163rem, 0.547rem + 0.82vw, 1.563rem);
       font-weight: 400;
       line-height: normal;
       margin-bottom: 3%;
